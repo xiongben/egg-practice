@@ -12,3 +12,8 @@ exports.mysql = {
     enabled: true,
     package: 'egg-mysql',
 };
+
+exports.io = {
+    enabled: true,
+    package: 'egg-socket.io',
+};

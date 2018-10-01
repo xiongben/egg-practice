@@ -23,6 +23,20 @@ module.exports = appInfo => {
     agent: false,
   };
 
+  config.io = {
+    init: {},
+    namespace: {
+      '/': {
+        connectionMiddleware: [],
+        packetMiddleware: [],
+      },
+      '/example': {
+        connectionMiddleware: [],
+        packetMiddleware: [],
+      },
+    },
+  }
+
   return config;
 };
 

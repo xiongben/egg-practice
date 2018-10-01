@@ -5,7 +5,7 @@ class UserController extends Controller {
   async index() {
     var id = this.ctx.query.id;
     var res = await this.service.user.find(id);
-    let params = this.ctx.query;
+    // let params = this.ctx.query;
     this.ctx.body = res;
   }
 }
