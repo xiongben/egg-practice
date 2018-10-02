@@ -8,6 +8,8 @@ socket.on('connect', () => {
   socket.emit('chat', 'hello world!');
 });
 
+
 socket.on('res', msg => {
   console.log('res from server: %s!', msg);
 });
+
